@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet" />
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
   :root {
     --bg: #080c10;
     --surface: #0e1419;
@@ -22,9 +22,9 @@
     --mono: 'Space Mono', monospace;
     --display: 'Syne', sans-serif;
   }
-
+ 
   html { scroll-behavior: smooth; }
-
+ 
   body {
     background: var(--bg);
     color: var(--text);
@@ -34,7 +34,7 @@
     overflow-x: hidden;
     cursor: none;
   }
-
+ 
   /* Custom cursor */
   #cursor {
     position: fixed; width: 10px; height: 10px;
@@ -51,7 +51,7 @@
     transition: transform 0.18s ease, width 0.25s, height 0.25s;
   }
   body:hover #cursor { opacity: 1; }
-
+ 
   /* Grid bg */
   body::before {
     content: '';
@@ -62,7 +62,7 @@
     background-size: 40px 40px;
     pointer-events: none; z-index: 0;
   }
-
+ 
   /* Nav */
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
@@ -91,10 +91,10 @@
   }
   .nav-links a:hover { color: var(--accent); }
   .nav-links a:hover::after { width: 100%; }
-
+ 
   /* Sections */
   section { position: relative; z-index: 1; }
-
+ 
   /* Hero */
   #hero {
     min-height: 100vh;
@@ -142,7 +142,7 @@
     border: 1px solid var(--border);
   }
   .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
-
+ 
   .hero-stats {
     display: flex; gap: 3rem; margin-top: 4rem;
     padding-top: 2rem; border-top: 1px solid var(--border);
@@ -152,7 +152,7 @@
     color: var(--accent); display: block;
   }
   .stat-label { font-size: 11px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; }
-
+ 
   /* Section headers */
   .section-wrap { max-width: 1100px; margin: 0 auto; padding: 6rem 3rem; }
   .section-tag {
@@ -166,7 +166,7 @@
     font-weight: 800; color: var(--text); margin-bottom: 3rem;
     letter-spacing: -0.02em; line-height: 1.1;
   }
-
+ 
   /* About */
   .about-grid {
     display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;
@@ -188,7 +188,7 @@
   }
   .highlight-title { font-size: 13px; font-weight: 700; color: var(--text); margin-bottom: 2px; }
   .highlight-desc { font-size: 12px; color: var(--muted); }
-
+ 
   /* Skills */
   #skills { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
   .skills-grid {
@@ -217,7 +217,7 @@
   }
   .pill:hover { color: var(--accent); border-color: rgba(0,220,160,0.3); }
   .pill.hot { color: var(--accent2); border-color: rgba(0,170,255,0.2); }
-
+ 
   /* Projects */
   .projects-grid {
     display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;
@@ -267,7 +267,7 @@
     border: 1px solid rgba(0,170,255,0.15);
     border-radius: 2px; letter-spacing: 0.05em;
   }
-
+ 
   /* Contact */
   #contact { background: var(--surface); border-top: 1px solid var(--border); }
   .contact-inner {
@@ -299,7 +299,7 @@
   .contact-form input:focus,
   .contact-form textarea:focus { border-color: rgba(0,220,160,0.4); }
   .contact-form textarea { min-height: 120px; }
-
+ 
   /* Footer */
   footer {
     text-align: center; padding: 2rem; font-size: 11px;
@@ -308,7 +308,7 @@
     position: relative; z-index: 1;
   }
   footer span { color: var(--accent); }
-
+ 
   /* Scan line */
   @keyframes scan {
     0% { top: -10%; }
@@ -320,7 +320,7 @@
     pointer-events: none; z-index: 50;
     animation: scan 6s linear infinite;
   }
-
+ 
   /* Entrance animations */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(24px); }
@@ -335,11 +335,11 @@
   .hero-sub { animation-delay: 0.4s; }
   .hero-cta { animation-delay: 0.55s; }
   .hero-stats { animation-delay: 0.7s; }
-
+ 
   /* Scroll reveal */
   .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
   .reveal.visible { opacity: 1; transform: none; }
-
+ 
   @media (max-width: 768px) {
     nav { padding: 1rem 1.5rem; }
     .nav-links { display: none; }
@@ -353,14 +353,14 @@
 </style>
 </head>
 <body>
-
+ 
 <div id="cursor"></div>
 <div id="cursor-ring"></div>
 <div class="scanline"></div>
-
+ 
 <!-- NAV -->
 <nav>
-  <a href="#hero" class="nav-logo">DHIWAKAR<span>.</span></a>
+  <a href="#hero" class="nav-logo">DS<span>.</span></a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
@@ -368,7 +368,7 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
-
+ 
 <!-- HERO -->
 <section id="hero">
   <div class="hero-inner">
@@ -399,7 +399,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- ABOUT -->
 <section id="about">
   <div class="section-wrap">
@@ -444,7 +444,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- SKILLS -->
 <section id="skills">
   <div class="section-wrap">
@@ -454,6 +454,10 @@
       <div class="skill-group reveal">
         <div class="skill-group-title">Frontend</div>
         <div class="skill-pills">
+          <span class="pill hot">Next.js</span>
+          <span class="pill hot">React</span>
+          <span class="pill hot">TypeScript</span>
+          <span class="pill hot">Tailwind CSS</span>
           <span class="pill">HTML5</span>
           <span class="pill">CSS3</span>
           <span class="pill">JavaScript ES6</span>
@@ -506,14 +510,14 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- PROJECTS -->
 <section id="projects">
   <div class="section-wrap">
     <div class="section-tag">Projects</div>
     <h2>Things I've built.</h2>
     <div class="projects-grid">
-
+ 
       <div class="project-card reveal">
         <div class="project-num">01 / Featured</div>
         <div class="project-badges">
@@ -521,7 +525,7 @@
           <span class="badge-stat">98% accuracy</span>
           <span class="badge-stat">60% faster</span>
         </div>
-        <div class="project-title">Multi-Department Attendance Management System<a href="https://jaya-college-attendance.onrender.com/" target="_blank">[Live Demo]</a></div>
+        <div class="project-title">Multi-Department Attendance Management System</div>
         <div class="project-desc">
           Full-stack attendance system supporting multiple departments across 3 years, 9+ sections per department. Role-based auth for Head / Admin / Staff / Students. Real-time AJAX auto-save, Excel/CSV bulk upload, and a 6-period calculation engine achieving 98% accuracy.
         </div>
@@ -534,14 +538,14 @@
           <span class="tag">OpenPyXL</span>
         </div>
       </div>
-
+ 
       <div class="project-card reveal">
         <div class="project-num">02</div>
         <div class="project-badges">
           <span class="badge-stat">2s live refresh</span>
           <span class="badge-stat">6 wicket types</span>
         </div>
-        <div class="project-title">Cricket Scorer Pro<br><a href="https://circket-scoreboard.vercel.app/" target="_blank">[Live Demo]</a></div>
+        <div class="project-title">Cricket Scorer Pro</div>
         <div class="project-desc">
           High-concurrency web app with real-time match updates and comprehensive statistics tracking. RESTful APIs manage complex scoring logic — 6 wicket types, extras, automatic transitions. Advanced analytics including Strike Rate and Economy Rate on a 2s live scoreboard.
         </div>
@@ -553,11 +557,32 @@
           <span class="tag">CSS3</span>
         </div>
       </div>
-
+ 
+      <div class="project-card reveal">
+        <div class="project-num">03</div>
+        <div class="project-badges">
+          <span class="badge-stat">20+ sections</span>
+          <span class="badge-stat">sub-100ms TTI</span>
+          <span class="badge-stat">SSR</span>
+        </div>
+        <div class="project-title">Multi-Page Responsive College Website</div>
+        <div class="project-desc">
+          Modular college portal with 20+ sections — academics, admissions, departments, events, gallery — built with Next.js App Router and TypeScript. Reusable component library (Navbar, Footer, PageLayout) for consistent UI. Optimized with SSR, lazy-loaded galleries, and asset preloading achieving sub-100ms TTI. Semantic HTML, ARIA labels, and mobile-first Tailwind styling for full cross-device responsiveness. Deployed on Vercel.
+        </div>
+        <div class="project-meta">
+          <span class="tag">Next.js</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">React</span>
+          <span class="tag">Tailwind CSS</span>
+          <span class="tag">SSR</span>
+          <span class="tag">Vercel</span>
+        </div>
+      </div>
+ 
     </div>
   </div>
 </section>
-
+ 
 <!-- CONTACT -->
 <section id="contact">
   <div class="section-wrap">
@@ -575,11 +600,11 @@
             <span class="contact-link-icon">☏</span>
             +91 9360202169
           </a>
-          <a href="https://github.com/Dhiwakar4693" target="_blank" class="contact-link">
+          <a href="https://github.com" target="_blank" class="contact-link">
             <span class="contact-link-icon">⌥</span>
             GitHub Profile →
           </a>
-          <a href="https://www.linkedin.com/in/dhiwakar-s-492354384/" target="_blank" class="contact-link">
+          <a href="https://linkedin.com" target="_blank" class="contact-link">
             <span class="contact-link-icon">◈</span>
             LinkedIn →
           </a>
@@ -596,12 +621,12 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- FOOTER -->
 <footer>
   Built with care by <span>Dhiwakar S</span> · Chennai, Tamil Nadu · 2025
 </footer>
-
+ 
 <script>
   // Custom cursor
   const cursor = document.getElementById('cursor');
@@ -619,7 +644,7 @@
     el.addEventListener('mouseenter', () => { cursor.style.width='16px'; cursor.style.height='16px'; ring.style.width='48px'; ring.style.height='48px'; });
     el.addEventListener('mouseleave', () => { cursor.style.width='10px'; cursor.style.height='10px'; ring.style.width='34px'; ring.style.height='34px'; });
   });
-
+ 
   // Scroll reveal
   const reveals = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries) => {
@@ -631,7 +656,7 @@
     });
   }, { threshold: 0.1 });
   reveals.forEach(r => io.observe(r));
-
+ 
   // Form
   function handleSubmit(e) {
     e.preventDefault();
